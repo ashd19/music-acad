@@ -2,11 +2,7 @@
 export default function Home() {
   return (
     <div className="main bg-black text-amber-50 h-screen">
-<<<<<<< HEAD
       <h1></h1>
-=======
-      <h1>lsdflaksf</h1>
->>>>>>> e52ba01ae90db5ce8b9e52630bf830734ddde1fd
     
     </div>
   )
