@@ -6,7 +6,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="navbar-container  ml-80 rounded-full border-black border-3 mt-5 w-300 h-[100px]  flex items-center justify-between px-8 py-3">
+    <div className="navbar-container   ml-80 rounded-full border-black border-3 mt-5 w-300 h-[100px]  flex items-center justify-between px-8 py-3">
       {/* Left: Logo */}
       <a href="https://google.com" className="flex items-center">
         <img

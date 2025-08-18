@@ -1,0 +1,36 @@
+const nav = [
+  {
+   href:"/about" , label:"About"
+  },
+
+...
+
+]
+
+
+main div 
+logo div , wrap image inside an a tag 
+now for links 
+
+<div flex gap-10>
+ {
+  navl.map(
+
+(items,index) => (
+<a
+key={index}
+href={items.href}
+some css for that link 
+>
+{item.label}
+</a>
+))}
+
+
+
+)
+  )
+ }
+</div>
+
+

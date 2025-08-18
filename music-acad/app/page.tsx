@@ -1,7 +1,11 @@
+import HeroSection from "@/components/HeroSection"
+
 export default function Page(){
     return(
-        <div className="ash">
-            
+        <div className="Hero-section ">
+            <br />
+
+            <HeroSection/>
         </div>
     )
 }
