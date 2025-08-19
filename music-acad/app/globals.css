@@ -120,3 +120,49 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+/* Shooting star effect */
+.shooting-star {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 3px;
+  height: 80px;
+  background: linear-gradient(45deg, white, transparent);
+  opacity: 0.8;
+  transform: rotate(45deg);
+  animation: shooting 2s linear infinite;
+}
+
+/* Shooting animation */
+@keyframes shooting {
+  0% {
+    transform: translate(-200px, -200px) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100vw, 100vh) rotate(45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(120vw, 120vh) rotate(45deg);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Suraj's Guitar Classes",
+    "description": "A bootcamp where I take you from 1-100 🎸",
+    "details": "You must have a basic guitar and 20 minutes to learn daily.",
+    "is_featured": true
+  },
+  {
+    "id": 2,
+    "title": "Ananya's Piano Lessons",
+    "description": "Step into the world of melodies with beginner piano 🎹",
+    "details": "Requires a basic keyboard or piano. Practice 20 minutes daily.",
+    "is_featured": false
+  },
+  {
+    "id": 3,
+    "title": "Rahul's Drumming Basics",
+    "description": "Learn rhythm and beats with fun drum sessions 🥁",
+    "details": "Drum pads or a simple drum set recommended. 15 minutes daily.",
+    "is_featured": true
+  },
+  {
+    "id": 4,
+    "title": "Simran's Violin Workshop",
+    "description": "Discover the art of violin playing from scratch 🎻",
+    "details": "Requires a beginner violin and daily 20 minutes practice.",
+    "is_featured": false
+  },
+  {
+    "id": 5,
+    "title": "Arjun's Flute Journey",
+    "description": "Learn to play soulful Indian & Western flute tunes 🎶",
+    "details": "A beginner flute is required. Daily 10–15 minutes practice.",
+    "is_featured": true
+  },
+  {
+    "id": 6,
+    "title": "Meera's Vocal Mastery",
+    "description": "Train your voice and learn classical & pop singing 🎤",
+    "details": "No instrument required. Just passion for singing.",
+    "is_featured": false
+  },
+  {
+    "id": 7,
+    "title": "Kabir's Ukulele Fun",
+    "description": "A cheerful course to master ukulele strumming 🌺",
+    "details": "Basic ukulele required. Learn fun songs in 3 weeks.",
+    "is_featured": true
+  },
+  {
+    "id": 8,
+    "title": "Priya's Harmonium Course",
+    "description": "Learn Indian classical music on harmonium 🎼",
+    "details": "Requires a basic harmonium. Perfect for bhajans & ragas.",
+    "is_featured": false
+  },
+  {
+    "id": 9,
+    "title": "Dev's Music Production Bootcamp",
+    "description": "Learn how to compose & produce music digitally 🎧",
+    "details": "Laptop with DAW (FL Studio, Ableton, etc.) required.",
+    "is_featured": true
+  },
+  {
+    "id": 10,
+    "title": "Riya's Tabla Beats",
+    "description": "Master classical rhythms with tabla 🪘",
+    "details": "Beginner tabla required. Daily 15 minutes practice.",
+    "is_featured": true
+  }
+]
