@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   const navItems = [
     { href: "/about", label: "About" },
@@ -8,14 +10,15 @@ export default function Navbar() {
   return (
     <div className="navbar-container  fixed z-50  bg-gray-800  ml-80 rounded-full border-black border-4 mt-5 w-300 h-[100px]  flex items-center justify-between px-8 py-3">
       {/* Left: Logo */}
-      <a href="/" className="flex items-center">
-        <img
-          src="//music.youtube.com/img/on_platform_logo_dark.svg"
-          alt="Logo"
-          width={150}
-          height={30}
-        />
-      </a>
+      
+        <Link href={"/"} className="flex items-center">
+          <img
+            src="//music.youtube.com/img/on_platform_logo_dark.svg"
+            alt="Logo"
+            width={150}
+            height={30}
+          />
+        </Link>
 
       {/* Right: Links */}
       <div className="  flex gap-10">
