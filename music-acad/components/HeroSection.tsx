@@ -6,6 +6,11 @@ import { Button } from "./ui/button";
 import CardModal from "./CardModal";
 import CourseDate from '../data/music_courses.json';
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
+import { Carousel } from "./ui/carousel";
+import { CarouselPlugin } from "./ui/finalCarousel";
+import { AvatarGroup } from "./animate-ui/components/avatar-group";
+import { AvatarGroupDemo } from "./animate-ui/components/avatar-group-demo";
+import { ScrollProgress } from "./animate-ui/components/scroll-progress";
 // use coures as a component
 
 
@@ -59,11 +64,18 @@ const HeroSection = () => {
     <div className="relative mt-50 top-0 left-0 h-auto md:[40rem] w-full rounded-md flex-col items-center justify-center overflow-hidden mx-auto py-10 md:py-0 bg-black">
       {/* ✨ Shooting star background effect */}
       <span className="shooting-star"></span>
-
+           
+      
       <div className="p-4 relative z-10 w-full text-center">
-        <h1 className="text-7xl font-mono font-semibold mb-5 text-white">
-          Master the Art of Music
-        </h1>
+       
+
+          <h1 className="text-7xl font-mono font-semibold  text-white">
+            Master the Art of Music 
+            </h1>
+               
+                
+          
+        
         <p className="text-2xl font-mono font-semibold text-gray-300">
           Dive into the comprehensive music courses and transform your musical
           journey today. <br />
@@ -87,39 +99,39 @@ const HeroSection = () => {
 
 
          {/* backend  , let the admin ...// course // creator login ( your courses) create  like in djagno eg */}
-        <div className="featuredCourses  w-full h-full bg-cyan-950  py-10 px-10 rounded-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-         {
-           featuredCourses.map(
-            (course)=>(
-              <CardModal 
-               key={course.id}
-               title={course.title}
-               description={course.description}
-               details={course.details}
-               onCancel={()=>alert("Cancelled")}
-               onDeploy={()=>alert("Added")}
-
-
-              />
-            )
-
-            
-           )
-            
-           
-
-         }
-     
+               {/* Featured Courses */}
+        <div className="featuredCourses w-full bg-cyan-950 py-10 px-10 rounded-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {featuredCourses.map((course) => (
+            <CardModal
+              key={course.id}
+              title={course.title}
+              description={course.description}
+              details={course.details}
+              onCancel={() => alert("Cancelled")}
+              onDeploy={() => alert("Added")}
+            />
+          ))}
         </div>
-            <div className="ml-[350px] w-full text-center text-4xl font-bold font-mono bg-emerald-900">
-       
-      </div>
-           <div className="whychooseUs">
-            <h1 className="text-4xl font-bold font-mono " >Why choose us ?</h1>
-           <StickyScroll content={musicContent}/>
-           </div>
+<ScrollProgress />
+        {/* Why Choose Us */}
+        <div className="whychooseUs w-full h-full bg-black flex flex-col   mx-auto mt-16 px-6">
+          <div className="flex ">
+            <h1 className="text-4xl font-bold font-mono  ml-170 text-center   text-white">
+              Why Choose Us?
+            </h1>
+             <div className="flex ml-50">
+
+               <AvatarGroupDemo />
+             </div>
+          </div>
+          <br />
+
+            <CarouselPlugin  />
+        </div>
 
       </div>
+
+      
     </div>
   );
 };
